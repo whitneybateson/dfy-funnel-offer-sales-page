@@ -128,8 +128,9 @@ nav{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:1px 
 #about{background:var(--cream)}
 .about-grid{display:grid;grid-template-columns:160px 1fr;gap:40px;align-items:start;max-width:780px}
 @media(max-width:620px){.about-grid{grid-template-columns:1fr;gap:24px}}
-.avatar{width:160px;height:160px;border-radius:50%;background:var(--hi-md);display:flex;align-items:center;justify-content:center;font-family:var(--head);font-size:2.6rem;color:var(--navy);flex-shrink:0}
-@media(max-width:620px){.avatar{width:100px;height:100px;font-size:1.8rem}}
+.avatar{width:160px;height:160px;border-radius:50%;background:var(--hi-md);overflow:hidden;flex-shrink:0;border:3px solid var(--hi-md)}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+@media(max-width:620px){.avatar{width:120px;height:120px}}
 .about-name{font-family:var(--head);font-size:1.45rem;color:var(--text);margin-bottom:4px}
 .about-role{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);display:block;margin-bottom:18px}
 
@@ -245,7 +246,7 @@ footer a{color:var(--muted)}
 <nav>
   <div class="wrap">
     <div class="nav-row">
-      <a class="logo" href="#">Whitney Bateson</a>
+      <a class="logo" href="#"><img src="Script-Navy.png" alt="Whitney Bateson" style="height:36px;width:auto;display:block;" /></a>
       <a class="btn btn-sm" href="#pricing">See the Details</a>
     </div>
   </div>
@@ -413,7 +414,7 @@ footer a{color:var(--muted)}
         <div class="d-num">04</div>
         <div class="d-content">
           <h3>📬 Delivery + Welcome Emails</h3>
-          <p>A delivery email that goes out the moment someone signs up, followed by a 5-email welcome sequence sent over three weeks — introducing you, sharing your perspective, and warming new subscribers to what you offer.</p>
+          <p>A delivery email that goes out the moment someone signs up, followed by a 5-email welcome sequence sent over three weeks – introducing you, sharing your perspective, and warming new subscribers to what you offer.</p>
           <span class="d-why">Most people <span class="nb">aren't ready to book right away.</span> This keeps things engaged until they are.</span>
         </div>
       </div>
@@ -422,7 +423,7 @@ footer a{color:var(--muted)}
         <div class="d-num">05</div>
         <div class="d-content">
           <h3>📣 Facebook &amp; Instagram Ad Campaign</h3>
-          <p>Campaign copy written, graphic designed, targeting set up, and campaign launched. Running at a small daily budget (i.e. $5/day) — you own the account and can pause anytime.</p>
+          <p>Campaign copy written, graphic designed, targeting set up, and campaign launched. Running at a small daily budget (i.e. $5/day) – you own the account and can pause anytime.</p>
           <span class="d-why"><span class="ul">Without traffic, a funnel just sits there.</span> This is what makes it work every day.</span>
         </div>
       </div>
@@ -495,7 +496,7 @@ footer a{color:var(--muted)}
 <section id="about">
   <div class="wrap">
     <div class="about-grid fi">
-      <div class="avatar" aria-hidden="true">WB</div>
+      <div class="avatar"><img src="dfy funnel bio.jpeg" alt="Whitney Bateson" /></div>
       <div>
         <h3 class="about-name">Whitney Bateson</h3>
         <span class="about-role">MPH, RD · Marketing Strategist for Health Practitioners</span>
@@ -523,14 +524,14 @@ footer a{color:var(--muted)}
       </div>
 
       <span class="price-big">$997</span>
-      <p class="price-note">Beta pricing — one-time. No ongoing fees from us. Ad spend (~$150/mo at $5/day) goes directly to Meta.</p>
+      <p class="price-note">Beta pricing – one-time. No ongoing fees from us. Ad spend (~$150/mo at $5/day) goes directly to Meta.</p>
 
       <ul class="inc-list">
         <li>Lead magnet, created or refined for your audience</li>
         <li>Opt-in page with copy, design, and email platform connection</li>
         <li>Thank you page</li>
         <li>Delivery email + 5-email welcome sequence, written and set up</li>
-        <li>Facebook &amp; Instagram ad campaign — copy, creative, targeting, and launch</li>
+        <li>Facebook &amp; Instagram ad campaign – copy, creative, targeting, and launch</li>
         <li>Funnel walkthrough video</li>
         <li>30 days of Slack support</li>
       </ul>
@@ -540,9 +541,10 @@ footer a{color:var(--muted)}
       </div>
 
       <div class="cta-pair">
-        <a class="btn btn-p btn-block" href="[PURCHASE LINK]">Claim a spot · $997</a>
+        <a class="btn btn-p btn-block" href="https://whitneybateson.thrivecart.com/done-for-you-funnel/">Claim a spot · $997</a>
+        <p style="text-align:center;font-size:14px;color:var(--muted);margin-top:8px;font-style:italic;">Prefer to split it up? Two payments of $499 available.</p>
         <p class="cta-or">or</p>
-        <a class="btn btn-s btn-block" href="[BOOKING LINK]">Book a 20-min call first</a>
+        <a class="btn btn-s btn-block" href="https://whitneybateson.as.me/dfy-funnel-discovery">Book a 20-min call first</a>
       </div>
       <p class="cta-sub">Not sure if this is right for you? Hop on a quick call with Whitney.</p>
     </div>
@@ -590,7 +592,7 @@ footer a{color:var(--muted)}
 
       <details class="faq-item">
         <summary class="faq-q">Will there be any live calls involved?</summary>
-        <div class="faq-a">We don't anticipate needing to get on any calls. All of the work is done asynchronously — we get started, you check this off your to-do list! Everything is communicated through our project tools and Slack, so there's no scheduling required on your end.</div>
+        <div class="faq-a">We don't anticipate needing to get on any calls. All of the work is done asynchronously – we get started, you check this off your to-do list! Everything is communicated through our project tools and Slack, so there's no scheduling required on your end.</div>
       </details>
 
       <details class="faq-item">
@@ -600,7 +602,7 @@ footer a{color:var(--muted)}
 
       <details class="faq-item">
         <summary class="faq-q">How will you make sure everything sounds like me and matches my brand?</summary>
-        <div class="faq-a">We collect the key details from you upfront using our intake tools — your voice, your values, your audience, and your style. Everything we create is built from that foundation. We base all copy, design, and messaging on your brand, not a generic template. You'll also have a chance to review and give feedback before anything goes live.</div>
+        <div class="faq-a">We collect the key details from you upfront using our intake tools – your voice, your values, your audience, and your style. Everything we create is built from that foundation. We base all copy, design, and messaging on your brand, not a generic template. You'll also have a chance to review and give feedback before anything goes live.</div>
       </details>
 
     </div>
@@ -615,8 +617,8 @@ footer a{color:var(--muted)}
       <h2>If you've been meaning to build this for a while, <span class="ul">this is the shortcut</span>. 🚀</h2>
       <p class="sub">Three spots. Special intro price of $997 for this new service. <span class="nb">We do the work, you finally get a system bringing you new leads and clients automatically.</span></p>
       <div class="close-ctas">
-        <a class="btn btn-p" href="[PURCHASE LINK]">Claim a spot · $997</a>
-        <a class="btn btn-s" href="[BOOKING LINK]">Book a call first</a>
+        <a class="btn btn-p" href="https://whitneybateson.thrivecart.com/done-for-you-funnel/">Claim a spot · $997</a>
+        <a class="btn btn-s" href="https://whitneybateson.as.me/dfy-funnel-discovery">Book a call first</a>
       </div>
       <p class="close-note">Questions? Email me at <a href="mailto:info@whitneybateson.com">info@whitneybateson.com</a></p>
     </div>
