@@ -174,6 +174,30 @@ details[open] .faq-q::after{transform:rotate(45deg)}
 footer{background:var(--cream);border-top:1px solid var(--border);padding:24px 0;text-align:center;font-size:14px;color:var(--muted)}
 footer a{color:var(--muted)}
 
+/* funnel flow */
+#funnel-flow{background:var(--soft);padding:48px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.funnel-label{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);margin-bottom:20px;text-align:center}
+.funnel-steps{display:flex;align-items:flex-start;justify-content:center;gap:0;flex-wrap:wrap}
+.funnel-step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 10px;flex:1;min-width:110px;max-width:150px}
+.funnel-icon{font-size:26px;margin-bottom:8px;line-height:1}
+.funnel-step-title{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:4px;line-height:1.3}
+.funnel-step-desc{font-size:12px;color:var(--muted);line-height:1.5}
+.funnel-arrow{font-size:18px;color:var(--navy);opacity:.3;margin-top:20px;flex-shrink:0;align-self:flex-start;padding-top:10px}
+@media(max-width:700px){.funnel-steps{gap:8px}.funnel-arrow{display:none}.funnel-step{min-width:90px;padding:0 6px}}
+
+/* bonuses */
+.bonuses{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+@media(max-width:640px){.bonuses{grid-template-columns:1fr}}
+.bonus-item{background:var(--hi);border:1px solid var(--hi-md);border-radius:14px;padding:22px 24px;text-align:center}
+.bonus-icon{font-size:24px;margin-bottom:10px;line-height:1;display:block}
+.bonus-item h4{font-family:var(--head);font-size:1rem;font-weight:500;color:var(--navy);margin-bottom:6px}
+.bonus-item p{font-size:14px;color:var(--muted);line-height:1.55;margin:0}
+.bonuses-label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);margin-bottom:16px;display:block}
+
+/* price-was */
+.price-was{font-size:14px;color:var(--muted);font-style:italic;margin-bottom:4px}
+.price-was s{text-decoration-color:rgba(92,92,92,.5)}
+
 /* no bold inside any card */
 .step-card strong, .step-card b,
 .d-item strong, .d-item b,
@@ -238,13 +262,13 @@ footer a{color:var(--muted)}
         You get <em>new leads every day</em><br/>without the tech headaches. 🙌
       </h1>
       <p class="hero-sub fi d2">
-        A <span class="nb">done-for-you funnel</span> — lead magnet, opt-in page, welcome emails, and a <span class="hl">$5/day ad campaign</span>. Built and running in weeks. You focus on clients. <span class="ul">We handle everything else.</span>
+        A <span class="nb">done-for-you funnel</span> — lead magnet, opt-in page, welcome emails, and a Facebook &amp; Instagram ad campaign, all set up for you. Built and running in weeks. You focus on clients. <span class="ul">We handle everything else.</span>
       </p>
       <div class="hero-ctas fi d3">
         <a class="btn btn-p" href="[PURCHASE LINK]">Claim a spot · $997</a>
         <a class="btn btn-s" href="[BOOKING LINK]">Book a call first</a>
       </div>
-      <p class="hero-note fi d4">Three spots available. Not publicly listed.</p>
+      <p class="hero-note fi d4">Three spots available. Beta price of $997 — will increase to $1,997 after this round.</p>
     </div>
   </div>
 </section>
@@ -256,7 +280,7 @@ footer a{color:var(--muted)}
     <div class="strip-row fi">
       <div class="strip-item">👥 150+ practitioners helped</div>
       <div class="strip-item">✅ Complete funnel, done for you</div>
-      <div class="strip-item">⚡ $5/day ad campaign included</div>
+      <div class="strip-item">⚡ Ad campaign set up included</div>
       <div class="strip-item">💬 30 days Slack support</div>
     </div>
   </div>
@@ -292,30 +316,54 @@ footer a{color:var(--muted)}
 </section>
 
 
-<!-- HOW IT WORKS -->
+<!-- HOW IT WORKS / FUNNEL FLOW -->
 <section id="how">
   <div class="wrap">
     <div class="fi">
       <span class="slabel">How it works</span>
       <h2>A simple system that <span class="ul">runs in the background</span> while you see clients.</h2>
+      <p style="color:var(--muted);font-size:17px;max-width:580px;margin-bottom:36px;line-height:1.65">Every piece of your funnel works together in sequence — from the first time someone sees your ad to the moment they're ready to book. Here's exactly what we build and how it flows.</p>
     </div>
-    <div class="steps">
-      <div class="step-card fi d1">
-        <span class="step-num">Step 1</span>
-        <h3>🎯 Attract</h3>
-        <p>A small daily ad brings new people to your lead magnet around the clock. No posting required.</p>
+
+    <div class="funnel-steps fi d1">
+      <div class="funnel-step">
+        <div class="funnel-icon">📣</div>
+        <div class="funnel-step-title">Ad</div>
+        <div class="funnel-step-desc">Facebook &amp; Instagram ad drives targeted traffic to your opt-in page</div>
       </div>
-      <div class="step-card fi d2">
-        <span class="step-num">Step 2</span>
-        <h3>✉️ Nurture</h3>
-        <p>A welcome email series introduces you and builds trust automatically over the next few weeks.</p>
+      <div class="funnel-arrow">→</div>
+      <div class="funnel-step">
+        <div class="funnel-icon">🖥️</div>
+        <div class="funnel-step-title">Opt-In Page</div>
+        <div class="funnel-step-desc">Visitor claims your free lead magnet and joins your list</div>
       </div>
-      <div class="step-card fi d3">
-        <span class="step-num">Step 3</span>
-        <h3>📅 Convert</h3>
-        <p>When someone's ready to work with you, they already know who you are. They reach out.</p>
+      <div class="funnel-arrow">→</div>
+      <div class="funnel-step">
+        <div class="funnel-icon">🙏</div>
+        <div class="funnel-step-title">Thank You Page</div>
+        <div class="funnel-step-desc">Confirms the resource is coming + invites them to book a call</div>
+      </div>
+      <div class="funnel-arrow">→</div>
+      <div class="funnel-step">
+        <div class="funnel-icon">📬</div>
+        <div class="funnel-step-title">Delivery Email</div>
+        <div class="funnel-step-desc">Sends their lead magnet instantly and makes a warm first impression</div>
+      </div>
+      <div class="funnel-arrow">→</div>
+      <div class="funnel-step">
+        <div class="funnel-icon">💌</div>
+        <div class="funnel-step-title">Welcome Series</div>
+        <div class="funnel-step-desc">5 emails over 3 weeks — your story, your expertise, another invite to connect</div>
+      </div>
+      <div class="funnel-arrow">→</div>
+      <div class="funnel-step">
+        <div class="funnel-icon">📅</div>
+        <div class="funnel-step-title">New Client</div>
+        <div class="funnel-step-desc">They book a call — or stay on your list and become a client when the time is right</div>
       </div>
     </div>
+
+    <p class="fi d2" style="margin-top:28px;font-size:15px;color:var(--muted);font-style:italic;text-align:center;max-width:560px;margin-left:auto;margin-right:auto">By the end of the sequence, someone has either booked a call or heard from you multiple times, gotten to know you, and is a warm member of your audience.</p>
   </div>
 </section>
 
@@ -361,48 +409,42 @@ footer a{color:var(--muted)}
       <div class="d-item fi">
         <div class="d-num">04</div>
         <div class="d-content">
-          <h3>📬 Delivery Email</h3>
-          <p>Sends automatically the moment someone signs up. Written well, set up in your platform, running on its own.</p>
-          <span class="d-why">Your <span class="ul">first impression</span>. We make sure it's a good one.</span>
+          <h3>📬 Delivery + Welcome Emails</h3>
+          <p>A delivery email that goes out the moment someone signs up, followed by a 5-email welcome sequence sent over three weeks — introducing you, sharing your perspective, and warming new subscribers to what you offer.</p>
+          <span class="d-why">Most people <span class="nb">aren't ready to book right away</span>. This keeps things warm until they are.</span>
         </div>
       </div>
 
       <div class="d-item fi">
         <div class="d-num">05</div>
         <div class="d-content">
-          <h3>💌 Welcome Email Series (5 emails)</h3>
-          <p>Five emails sent over three weeks introducing you, sharing your perspective, and warming new subscribers to what you offer.</p>
-          <span class="d-why">Most people <span class="nb">aren't ready to book right away</span>. This keeps things warm until they are.</span>
-        </div>
-      </div>
-
-      <div class="d-item fi">
-        <div class="d-num">06</div>
-        <div class="d-content">
-          <h3>📣 $5/Day Ad Campaign</h3>
-          <p>A Facebook and Instagram campaign with copy written, graphic designed, and targeting set up. Running at $5/day. You own the account and can pause anytime.</p>
+          <h3>📣 Facebook &amp; Instagram Ad Campaign</h3>
+          <p>Campaign copy written, graphic designed, targeting set up, and campaign launched. Running at a small daily budget — you own the account and can pause anytime.</p>
           <span class="d-why"><span class="ul">Without traffic, a funnel just sits there.</span> This is what makes it work every day.</span>
         </div>
       </div>
 
-      <div class="d-item fi">
-        <div class="d-num">07</div>
-        <div class="d-content">
-          <h3>🎬 Funnel Walkthrough Video</h3>
-          <p>A short video walking you through everything we built so you know what's running and how to keep an eye on it.</p>
-          <span class="d-why">You should <span class="key">understand your own system</span>, even if you didn't build it.</span>
+    </div>
+
+    <div style="margin-top:36px" class="fi d1">
+      <span class="bonuses-label">Also included</span>
+      <div class="bonuses">
+        <div class="bonus-item">
+          <span class="bonus-icon">🎬</span>
+          <h4>Funnel Walkthrough Video</h4>
+          <p>A short video walking you through everything we built so you know exactly what's running.</p>
+        </div>
+        <div class="bonus-item">
+          <span class="bonus-icon">💬</span>
+          <h4>30 Days of Slack Support</h4>
+          <p>Direct access to our team for a full month after launch — questions, tweaks, troubleshooting.</p>
+        </div>
+        <div class="bonus-item">
+          <span class="bonus-icon">📊</span>
+          <h4>Ad Account Setup &amp; Launch</h4>
+          <p>We handle the technical setup of your Meta ad account so you don't have to figure it out yourself.</p>
         </div>
       </div>
-
-      <div class="d-item fi">
-        <div class="d-num">08</div>
-        <div class="d-content">
-          <h3>💬 30 Days of Slack Support</h3>
-          <p>Direct access to me and my team for 30 days after launch. Questions, tweaks, troubleshooting. <span class="nb">We don't build it and disappear.</span></p>
-          <span class="d-why">The first month is when questions happen. We're here for it.</span>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -467,7 +509,7 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <div class="fi">
       <span class="slabel">The investment</span>
-      <h2>A <span class="hl">private beta offer</span> for a small group of practitioners.</h2>
+      <h2>A <span class="hl">private beta offer</span> — limited to 3 spots.</h2>
       <p class="p-intro">Not a public launch. A first round, priced to reflect that. Here's <span class="ul">exactly what you get</span> and what's expected in return.</p>
     </div>
 
@@ -477,16 +519,16 @@ footer a{color:var(--muted)}
         Beta · 3 Spots Only
       </div>
 
+      <p class="price-was">Regular price: <s>$1,997</s></p>
       <span class="price-big">$997</span>
-      <p class="price-note">One-time. No ongoing fees from us. Ad spend (~$150/mo at $5/day) goes directly to Meta.</p>
+      <p class="price-note">Beta pricing — one-time. No ongoing fees from us. Ad spend (~$150/mo at $5/day) goes directly to Meta.</p>
 
       <ul class="inc-list">
         <li>Lead magnet, created or refined for your audience</li>
         <li>Opt-in page with copy, design, and email platform connection</li>
         <li>Thank you page</li>
-        <li>Delivery email, automated on sign-up</li>
-        <li>5-email welcome sequence, written and set up</li>
-        <li>$5/day Facebook and Instagram ad campaign, copy, creative, targeting, live</li>
+        <li>Delivery email + 5-email welcome sequence, written and set up</li>
+        <li>Facebook &amp; Instagram ad campaign — copy, creative, targeting, and launch</li>
         <li>Funnel walkthrough video</li>
         <li>30 days of Slack support</li>
       </ul>
@@ -544,6 +586,21 @@ footer a{color:var(--muted)}
         <div class="faq-a">It works best when you have a clear service, some existing clients, and are willing to give it 90 days before drawing conclusions. If you want to talk through your situation first, that's exactly what the call is for.</div>
       </details>
 
+      <details class="faq-item">
+        <summary class="faq-q">Will there be any live calls involved?</summary>
+        <div class="faq-a">We don't anticipate needing to get on any calls. All of the work is done asynchronously — we get started, you check things off your to-do list. Everything is communicated through our project tools and Slack, so there's no scheduling required on your end.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">How much work will I need to do?</summary>
+        <div class="faq-a">Not much. You can expect to spend about 30 minutes filling out our onboarding questionnaire up front, then roughly 30–60 minutes total over the course of the project to review what we've built, share feedback, and make any minor tweaks. We handle everything else.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">How will you make sure everything sounds like me and matches my brand?</summary>
+        <div class="faq-a">We collect the key details from you upfront using our intake tools — your voice, your values, your audience, and your style. Everything we create is built from that foundation. We base all copy, design, and messaging on your brand, not a generic template. You'll also have a chance to review and give feedback before anything goes live.</div>
+      </details>
+
     </div>
   </div>
 </section>
@@ -554,7 +611,7 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <div class="fi">
       <h2>If you've been meaning to build this for a while, <span class="ul">this is the shortcut</span>. 🚀</h2>
-      <p class="sub">Three spots. Private pricing. <span class="nb">We do the work, you get the result.</span></p>
+      <p class="sub">Three spots. Beta price of $997 — going up to $1,997 after this round. <span class="nb">We do the work, you get the result.</span></p>
       <div class="close-ctas">
         <a class="btn btn-p" href="[PURCHASE LINK]">Claim a spot · $997</a>
         <a class="btn btn-s" href="[BOOKING LINK]">Book a call first</a>
